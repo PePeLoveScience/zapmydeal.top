@@ -1,0 +1,99 @@
+/* إعدادات عامة */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* التنسيق العام للمحتوى */
+.container {
+  padding: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+/* صورة الترويج */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* زر "الاستفادة من العرض" */
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* عداد المكافآت */
+.counter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 86px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 14px auto;
+}
+
+h1#counter {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+/* تنسيق النص في أسفل الصفحة */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* تحسين التنسيق للأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .btn-success {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .center {
+    width: 80%;
+  }
+}
