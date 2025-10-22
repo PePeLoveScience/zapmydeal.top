@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        ¡Consigue este regalo! </title>
+    <meta name="description" content="¡Consigue este regalo!">
+    <meta name="keywords" content="¡Consigue este regalo!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&amp;family=Roboto+Condensed:wght@300;400;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="font/font.css" />
+    <link rel="stylesheet" href="font/fa.css" />
+    <link rel="stylesheet" href="font/fa-1.css" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '835000602386801');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=835000602386801&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <main>
+        <section class="main">
+            <p class="main__date">EXPIRA <span id="date"></span></p>
+            <script>let date = new Date, month = date.getMonth(), monthArr = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"], year = date.getFullYear(), dateSpan = document.getElementById("date"), getDays = (e, t) => new Date(e, t, 0).getDate(), day = date.getDate(); const thisMonthDays = getDays(year, month); if (thisMonthDays >= day) { let e = `${monthArr[month].toUpperCase()} ${day + 1}, ${year}`; dateSpan.innerHTML = e } else { let t = `${monthArr[month].toUpperCase()} ${day}, ${year}`; dateSpan.innerHTML = t }</script>
+            <ul class="main__list">
+                <li class="main__item">
+                    <p class="main__subtitle">Costo: €0.00</p>
+                </li>
+                <li class="main__item">
+                    <p class="main__subtitle">Envío: €2.00</p>
+                </li>
+            </ul>
+            <a href="https://go.sweetcandylove.top/click" class="main-action-button main__link">
+                <img src="images/img1.jpg" alt="offer" class="main__image">
+            </a>
+            <h1 class="main__title">¿Quieres conseguir esta Caja Misteriosa de Shein gratis?<br>🎁 ¡Responde una breve encuesta para reclamar la tuya!</h1>
+            <ul class="main__buttons">
+                <li>
+                    <a href="https://go.sweetcandylove.top/click"
+                        class="main-action-button main__button main__button_red">¡Empieza ahora!</a>
+                </li>
+            </ul>
+            <p class="main__text">Nuestra organización pregunta a los clientes sobre la calidad de los productos y las
+                categorías de productos que prefieren, así como también sobre las mejoras que les gustaría ver.
+                Seleccionamos las encuestas de mayor calidad entre los usuarios y les damos regalos sin costo alguno,
+                ¡así que no pierda su oportunidad! Solo la semana pasada, casi mil personas recibieron regalos con un
+                gasto total de $0.00, y usted también puede tener esa oportunidad.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Política de privacidad</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Términos y condiciones</a>
+            </li>
+        </ul>
+        <p class="footer__text">Completar ofertas opcionales o preguntas de encuesta no garantiza que obtenga una
+            Recompensa.
+            Las ofertas, cupones, obsequios, muestras y otras ofertas (colectivamente “Ofertas”) cambian con frecuencia.
+            No podemos
+            garantizar que recibirá ninguna de las Ofertas que solicite, ya que las Ofertas están sujetas a
+            disponibilidad
+            y a menudo son realizadas por otras entidades. Las Ofertas distribuidas por Adrocketry son limitadas en
+            cantidad, y
+            Adrocketry se reserva el derecho de sustituir el producto de muestra según la disponibilidad. Las Ofertas
+            que no son
+            distribuidas por Adrocketry son monitoreadas por otras entidades, y no somos responsables si dichas Ofertas
+            ya no están
+            disponibles, cambian, si no recibe las Ofertas, si no califica para las Ofertas o si surge cualquier
+            otro problema. Los nombres de productos, logotipos, marcas y marcas comerciales de terceros que se muestran
+            en este sitio web son
+            propiedad de sus respectivos dueños. Estas empresas no están afiliadas a Adrocketry. Estos terceros no
+            patrocinan ni respaldan este sitio web, su contenido o servicios.</p>
+    </footer>
+
+</body>
+
+</html>
